@@ -1,6 +1,17 @@
-<%-include ./partials/header.ejs %>
-<%-include ./partials/main_nav.ejs %>
-
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %> page</p>
-<%-include ./partials/footer.ejs %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <%-include ./partials/header.ejs %>
+        <%-include ./partials/main_nav.ejs %>
+        <h1><%= title %></h1>
+        <p>Welcome to <%= title %> page</p>
+    </head>
+    <body>
+        <p>
+            Navigation's at the top right. Have a nice day!
+        </p>
+        <footer>
+            <%-include ./partials/footer.ejs %>
+        </footer>
+    </body>
+</html>

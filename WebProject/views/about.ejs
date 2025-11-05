@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <%-include ./partials/header.ejs %>
+        <%-include ./partials/main_nav.ejs %>
+        <h1><%= title %></h1>
+        <p>Welcome to <%= title %> page</p>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class = "photovideo">
+            <figure>
+                <img src="/Asset/images/IMG_3111(2).jpg" alt="Description of photo" width="300" height="300">
+                <figcaption>The creator of this website</figcaption>
+            </figure>
+            <video controls 
+            id = "video"
+            width="320" 
+            height="240" 
+            loop
+            poster="/Asset/images/Screenshot 2025-10-03 181013.jpg"
+            preload="auto">
+            <source src="/Asset/images/IMG_5006.mp4" type="video/mp4">
+            <source src="/Asset/images/IMG_5006.ogv" type="video/ogv">
+            </video>
+            </div>
+            <br>
+            <button onclick= "playPause()" >Play or pause the video</button>
+         <article id = "aboutme">
+            <h2>About Me</h2>
+            <p>Hi, my name is Gavin Dizon, and I am a student in Networking and 
+                IT security at Ontario Tech University. I am currently 
+                in my second year and I'm excited for many more! 
+                My interests include model kits, manga and portable consoles.
+            </p>
+        </div>  
+       
+        </article>
+        <footer>
+            <%-include ./partials/footer.ejs %>
+        </footer>
+        <script src="/Script/video.js"></script>
+    </body>
+</html>

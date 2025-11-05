@@ -11,19 +11,15 @@ router.get('/home', function(req, res, next) {
 });
 
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About' });
+  res.render('about', { title: 'About' });
 });
 
-router.get('/products', function(req, res, next) {
-  res.render('index', { title: 'Products' });
-});
-
-router.get('/services', function(req, res, next) {
-  res.render('index', { title: 'Services' });
+router.get('/projects', function(req, res, next) {
+  res.render('projects', { title: 'Projects' });
 });
 
 router.get('/contactus', function(req, res, next) {
-  res.render('index', { title: 'Contact Us' });
+  res.render('contactus', { title: 'Contact Me' });
 });
 
 module.exports = router;
