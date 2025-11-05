@@ -1,63 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/Content/app.css' />
-    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
-    <link rel ="stylesheet" href ="/@fortawesome/fontawesome-free/css/all.min.css">
-    <script src ="/jquery/dist/jquery.min.js"></script>
-    <script src ="/bootstrap/dist/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">INFR3120</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <% if (title == "Home") { %>
-          <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-lg fa-house"></i> Home</a>
-          <% } else { %>
-          <a class="nav-link" aria-current="page" href="/home"><i class="fa-solid fa-lg fa-house"></i> Home</a>
-          <% } %>
-        </li>
-        <li class="nav-item">
-          <% if (title == "About") { %>
-          <a class="nav-link active" aria-current="page" href="/about"><i class="fa-solid fa-lg fa-circle-info"></i> About</a>
-          <% } else { %>
-          <a class="nav-link" aria-current="page" href="/about"><i class="fa-solid fa-lg fa-circle-info"></i> About</a>
-          <% } %>
-        </li>
-        <li class="nav-item">
-          <% if (title == "Products") { %>
-          <a class="nav-link active" aria-current="page" href="/products"><i class="fa-solid fa-lg fa-list-check"></i> Product</a>
-          <% } else { %>
-          <a class="nav-link" aria-current="page" href="/products"><i class="fa-solid fa-lg fa-list-check"></i> Product</a>
-          <% } %>
-        </li>
-        <li class="nav-item">
-          <% if (title == "Services") { %>
-          <a class="nav-link active" aria-current="page" href="/services"><i class="fa-solid fa-lg fa-bars"></i> Services</a>
-          <% } else { %>
-          <a class="nav-link" aria-current="page" href="/services"><i class="fa-solid fa-lg fa-bars"></i> Services</a>
-          <% } %>
-        </li>
-        <li class="nav-item">
-          <% if (title == "Contact Us") { %>
-          <a class="nav-link active" aria-current="page" href="/contactus"><i class="fa-solid fa-lg fa-address-card"></i> Contact Us</a>
-          <% } else { %>
-          <a class="nav-link" aria-current="page" href="/contactus"><i class="fa-solid fa-lg fa-address-card"></i> Contact Us</a>
-          <% } %>
-        </li>
+<%-include ./partials/header.ejs %>
+<%-include ./partials/main_nav.ejs %>
 
-    </div>
-  </div>
-</nav>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %> page</p>
-    <script src="/Script/app.js"></script>
-  </body>
-</html>
+<%-include ./partials/footer.ejs %>
